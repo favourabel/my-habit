@@ -26,8 +26,8 @@
     "plugins": [
       "expo-router",
       [
-        "expo-splash-screen"
-       , {
+        "expo-splash-screen",
+        {
           "backgroundColor": "#208AEF",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
@@ -37,6 +37,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": false
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "e942ab76-66a2-4caf-991f-2e6d02e5c279"
+      }
     }
   }
 }
