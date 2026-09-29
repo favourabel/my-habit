@@ -6,11 +6,13 @@ module.exports = function (api) {
         "babel-preset-expo",
         { 
           jsxImportSource: "nativewind",
-          reactCompiler: false // 👈 THIS IS THE FIX
+          reactCompiler: false
         },
       ],
       "nativewind/babel",
     ],
-    plugins: ["babel-plugin-transform-import-meta"],
+    plugins: [
+      "react-native-reanimated/plugin" // 👈 REQUIRED: Fixes native Android APK startup crash
+    ],
   };
 };
